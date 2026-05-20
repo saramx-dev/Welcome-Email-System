@@ -9,8 +9,8 @@ Here is how your development environment should look with the live rendering ext
 ![VS Code MJML Live Preview Configuration](./images/darkMode.jpeg)
 
 ## Project Deployment Links
-* **Deployment URL**: [🔗 View Live HTML Demo]()
-* **Source Repository**: [📁 View Source Code]()
+* **Deployment URL**: [🔗 View Live HTML Demo](https://saramx-dev.github.io/Welcome-Email-System/)
+* **Source Repository**: [📁 View Source Code](https://github.com/saramx-dev/Welcome-Email-System)
 
 ## 🚀 Technical Architecture Overview
 
