@@ -26,7 +26,7 @@ services-welcome-email/
 ├── images/
 │   └── logo.png                # Raw transparent local identity asset
 ├── serviceWelcomeEmail.mjml    # Primary developmental source markup
-├── serviceWelcomeEmail.html    # Compiled production HTML with inline CSS attributes
+├── index.html    # Compiled production HTML with inline CSS attributes
 └── README.md                   # Complete repository guide, tokens, and copy deck
 ```
 
@@ -95,13 +95,13 @@ Instead of using command line tools, this project leverages the **VS Code MJML E
 1. Open `serviceWelcomeEmail.mjml` in VS Code.
 2. **Live Preview**: Press `Ctrl + Shift + P` and select **MJML: Live Preview** to see changes in real-time.
 3. **Compile to HTML**: When ready to deploy, press `Ctrl + Shift + P` and select **MJML: Export HTML**. 
-4. Save the compiled output file as `serviceWelcomeEmail.html`.
+4. Save the compiled output file as `index.html`.
 
 ## 📋 Mailchimp Free-Tier Import Best Practices
 
 Because Direct HTML Template Uploads are gated behind premium paid plans, follow this alternative production roadmap to deploy this custom template for free:
 
-1. **Copy Code**: Copy the complete compiled code inside `serviceWelcomeEmail.html`.
+1. **Copy Code**: Copy the complete compiled code inside `index.html`.
 2. **Create Campaign**: Within the Mailchimp Dashboard, navigate to **Campaigns** -> **Create New** -> **Regular Email**.
 3. **Design Email**: Under the **Content block** section, select **Design Email**.
 4. **Select Editor**: Choose the **Code Your Own** or **Legacy Builder** interface pane and click **Paste in Code**.
