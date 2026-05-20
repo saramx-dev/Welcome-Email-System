@@ -1,0 +1,12 @@
+# VS Code System Files
+.vscode/
+*.code-workspace
+
+# Operating System Junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# MJML Compiler Artifacts & Cache
+.mjml.cache/
+

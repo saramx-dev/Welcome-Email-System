@@ -1,0 +1,310 @@
+<mjml>
+  <mj-head>
+    <!-- Browser & Accessibility Settings -->
+    <mj-title>Welcome to OmniGlow Tech</mj-title>
+    <mj-preview
+      >Open up for your exclusive 15% onboarding discount code.</mj-preview
+    >
+
+    <!-- Global Component Resets and Fluid Typography Rhythm -->
+    <mj-attributes>
+      <!-- Sets fallback fonts, strips accidental client margins, and resets structural padding -->
+      <mj-all
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        padding="0px"
+        color="#1E1E24"
+      />
+      <!-- Killing the Auto-Injection Properly -->
+      <mj-font name="Roboto" href="" />
+
+      <mj-section
+        background-color="#F8FAFC"
+        border-left="1px solid #94a3b8"
+        border-right="1px solid #94a3b8"
+        padding="0px"
+      />
+
+      <!-- Readable Content Scale: Optimized for accessibility line-height -->
+      <mj-text
+        font-size="16px"
+        line-height="24px"
+        font-weight="400"
+        color="#1E1E24"
+      />
+
+      <!-- Global CTA Button Resets to prevent clipping issues in Outlook -->
+      <mj-button
+        background-color="#6366F1"
+        color="#FFFFFF"
+        font-size="16px"
+        font-weight="600"
+        border-radius="6px"
+        inner-padding="14px 32px"
+      />
+    </mj-attributes>
+
+    <!-- High-Precision Structural Breakpoints -->
+    <mj-breakpoint width="480px" />
+
+    <!-- Advanced Raw HTML Engine Tags -->
+    <mj-raw>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="x-apple-disable-message-reformatting"> <meta
+      http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Dark Mode Intent
+      Declaration --> <meta name="color-scheme" content="light dark"> <meta
+      name="supported-color-schemes" content="light dark"> <!-- Outlook XML
+      Fallback Settings --> <!--[if mso]> <noscript> <xml>
+      <o:OfficeDocumentSettings> <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml>
+      </noscript> <![endif]-->
+    </mj-raw>
+
+    <!-- Embedded Screen Reader & System Contrast Styles -->
+    <mj-style>
+      body,
+      html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      a:focus,
+      button:focus {
+        outline: 2px solid #10b981 !important;
+        outline-offset: 2px !important;
+      }
+
+      /* Target Outlook specifically to ensure a solid fallback */
+      [mso] .coupon-btn {
+        border: 2px solid #0c895f !important;
+      }
+      .borderTop {
+        border-top: 1px solid #94a3b8 !important;
+      }
+      .borderBottom {
+        border-bottom: 1px solid #94a3b8 !important;
+      }
+      .footer-border {
+        border-bottom: 1px solid #94a3b8 !important;
+        border-left: 1px solid #94a3b8 !important;
+        border-right: 1px solid #94a3b8 !important;
+      }
+
+      /* Dark Mode Inversion Styles */
+      @media (prefers-color-scheme: dark) {
+        /* 1. Primary Backgrounds changed to Deep Charcoal Matte (#121214) */
+        .body-bg,
+        .footer-bg {
+          background-color: #121214 !important;
+        }
+
+        /* 2. Coupon Box uses Lighter Gray (#1E1E24) so it stands out like a card */
+        .coupon-bg {
+          background-color: #1e1e24 !important;
+          /*  border: 2px dashed #10b981 !important;  Brand green pops perfectly */
+          border-radius: 10px !important;
+        }
+
+        /* 3. Section Containers  Lighter Gray (#1E1E24) */
+        .sect-bg {
+          background-color: #1e1e24 !important;
+          border-left: 1px solid #334155 !important;
+          border-right: 1px solid #334155 !important;
+        }
+
+        /* 4. Top/Bottom Borders switch to dark slate to match the frame */
+        .borderTop {
+          border-top: 1px solid #334155 !important;
+        }
+        .borderBottom {
+          border-bottom: 1px solid #334155 !important;
+          border-left: 1px solid #334155 !important; /* the footer edge gap */
+          border-right: 1px solid #334155 !important; /* the footer edge gap */
+        }
+
+        /* 5. Text & Accessibility Contrast */
+        .text-main {
+          color: #ffffff !important;
+        }
+        .text-muted * {
+          color: #94a3b8 !important;
+        }
+        .link-style {
+          color: #38bdf8 !important;
+        }
+
+        /* 6. Outlook's dark green border bug */
+        [mso] .coupon-btn {
+          border: 2px solid #10b981 !important; /* Bright brand green */
+        }
+
+        /* 7. Gives the main Indigo CTA button a visual boost against dark charcoal */
+        .cta-btn {
+          background-color: #818cf8 !important; /* Brighter indigo for readability */
+          border-radius: 30px !important;
+        }
+        .footer-border {
+          border-bottom: 1px solid #334155 !important;
+          border-left: 1px solid #334155 !important;
+          border-right: 1px solid #334155 !important;
+        }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#F1F5F9" css-class="body-bg">
+    <mj-wrapper padding="20px 0px">
+      <!-- HEADER SECTION -->
+      <mj-section padding="24px 24px 12px 24px" css-class="sect-bg borderTop">
+        <mj-column width="100%">
+          <mj-image
+            src="https://i.ibb.co/HpqmRS72/logo.png"
+            width="64px"
+            height="64px"
+            alt="OmniGlow Tech Logo"
+            align="center"
+            padding-bottom="16px"
+            border="2px solid #10b981"
+            border-radius="100%"
+          />
+          <mj-text
+            align="center"
+            font-size="28px"
+            line-height="36px"
+            font-weight="800"
+            css-class="text-main"
+          >
+            Welcome to OmniGlow
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- HERO IMAGE SECTION -->
+      <mj-section padding="0px 24px" css-class="sect-bg">
+        <mj-column width="100%">
+          <mj-image
+            src="https://plus.unsplash.com/premium_photo-1728776080545-0f160cfd35c9?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Smart Lighting Atmosphere"
+            width="552px"
+            padding="0px"
+            border-radius="6px"
+          />
+        </mj-column>
+      </mj-section>
+
+      <!-- BODY MESSAGE -->
+      <mj-section padding="24px 24px 12px 24px" css-class="sect-bg">
+        <mj-column width="100%">
+          <mj-text padding-bottom="16px" css-class="text-main">
+            Thank you for joining our community. We design smart lighting to
+            match your daily rhythm, boost your energy, and help you wind down.
+          </mj-text>
+          <mj-text padding-bottom="20px" css-class="text-main">
+            As a special thank you, use the code below at checkout to save on
+            your first smart light kit.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- CONVERSION TARGET BLOCK -->
+      <mj-section padding="0px 24px 32px 24px" css-class="sect-bg">
+        <mj-column
+          css-class="coupon-bg"
+          background-color="#53e6b5"
+          border="2px dashed #0c895f"
+          border-radius="10px"
+          padding="12px"
+        >
+          <mj-text
+            css-class="coupon-text"
+            font-size="18px"
+            font-weight="700"
+            align="center"
+          >
+            GLOW15
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0px 24px 32px 24px" css-class="sect-bg">
+        <mj-column>
+          <!-- Primary CTA Call To Action -->
+          <mj-button
+            css-class="cta-btn"
+            background-color="#6366F1"
+            color="#FFFFFF"
+            width="100%"
+            border-radius="30px"
+            inner-padding="16px 24px"
+            href="https://example.com"
+          >
+            Shop the Collection
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <!-- SEPARATOR -->
+      <mj-section padding="0px 24px 12px 24px" css-class="sect-bg">
+        <mj-column width="100%">
+          <mj-divider border-color="#CBD5E1" border-width="1px" padding="0px" />
+        </mj-column>
+      </mj-section>
+
+      <!-- FOOTER -->
+      <mj-section
+        background-color="#F8FAFC"
+        padding="24px"
+        css-class="footer-bg footer-border borderBottom"
+      >
+        <mj-column width="100%">
+          <mj-text
+            padding-bottom="12px"
+            font-size="12px"
+            line-height="18px"
+            align="center"
+            css-class="text-muted"
+          >
+            You received this email because you signed up for an account at
+            OmniGlow Tech.
+          </mj-text>
+
+          <mj-text
+            align="center"
+            font-size="12px"
+            padding-bottom="12px"
+            css-class="text-muted"
+          >
+            <a
+              href="*|MANAGE_PREFERENCES|*"
+              style="color: #6366f1; text-decoration: none"
+              class="link-style"
+              >Update Preferences</a
+            >
+            &nbsp;|&nbsp;
+            <a
+              href="*|UNSUB|*"
+              style="color: #6366f1; text-decoration: none"
+              class="link-style"
+              >Unsubscribe</a
+            >
+            &nbsp;|&nbsp;
+            <a
+              href="*|ARCHIVE|*"
+              style="color: #6366f1; text-decoration: none"
+              class="link-style"
+              >View in Browser</a
+            >
+          </mj-text>
+
+          <mj-text
+            align="center"
+            font-size="12px"
+            line-height="18px"
+            css-class="text-muted"
+          >
+            &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*. All rights reserved.<br />
+            *|HTML:LIST_ADDRESS_HTML|*
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>
